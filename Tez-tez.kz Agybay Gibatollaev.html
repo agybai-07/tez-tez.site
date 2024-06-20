@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbuz Friends</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100px;
+        }
+
+        .logo span {
+            font-size: 24px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+
+        .location i {
+            margin-right: 5px;
+        }
+        .hero {
+            background-color: #ffe0b2;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-text {
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .hero-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-img img {
+            max-width: 300px;
+        }
+
+        .hero-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .hero-nav i {
+            font-size: 30px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .hero-pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .hero-pagination span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .hero-pagination span.active {
+            background-color: #ff5722;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .product {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .product .discount {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ff5722;
+            color: white;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .product .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product .old-price {
+            font-size: 14px;
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .product .add-button {
+            background-color: #ff5722;
+            color: white;
+            font-size: 14px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://i.ibb.co.com/b1rC2F9/image.png" alt="Tez-tez.kz">
+            </div>
+            </div>
+            <button>Жүйеге кіру</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-nav">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Жаңа піскен көкөністерге</h1>
+                <p>тапсырыс беріңіз</p>
+                <h2>tez-tez.kz</h2>
+            </div>
+            <div class="hero-img">
+                <img src="https://images.thevoicemag.ru/upload/img_cache/493/493173ba9d947eb9624440f06237437e_cropped_666x444.webp" alt="Hero Image">
+            </div>
+        </div>
+        <div class="hero-pagination">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <div class="discount">-5%</div>
+            <img src="https://pngicon.ru/file/uploads/apple.png" alt="Apple">
+            <h3>Яблоко Гренни Смит кг</h3>
+            <p>1590 Т/кг • 1 кг</p>
+            <div class="price">1590 T</div>
+            <button class="add-button">Добавить +</button>
+        </div>
+        <div class="product">
+            <div class="discount">-5%</div>
+            <img src="https://minio.clevermart.kz/food/images/2023/2/8/c945d8f2-a482-4320-94b7-2129e2f87d6a/M_4870005730020_1.png" alt="Milk">
+            <h3>Молоко Родина 2,5%</h3>
+            <p>670 Т/шт. 1 шт</p>
+            <div class="price">670 T</div>
+            <button class="add-button">Добавить +</button>
+        </div>
+        <div class="product">
+            <div class="discount">-14%</div>
+            <img src="https://cc.kz/upload/iblock/e45/e45ea7618c826122b215cb6a4282b54f.jpg" alt="Oil">
+            <h3>Масло Шедевр подсолнечное</h3>
+            <p>710 Т/шт. 1 шт</p>
+            <div class="price">710 T</div>
+            <button class="add-button">Добавить +</button>
+        </div>
+        <div class="product">
+            <div class="discount">-35%</div>
+            <img src="https://resources.cdn-kaspi.kz/img/m/p/h8a/hca/64400153509918.jpg?format=gallery-medium" alt="Fairy">
+            <h3>Fairy жидкое 0.9 л</h3>
+            <p>1990 Т/шт. 1 шт</p>
+            <div class="price">1990 T</div>
+            <div class="old-price">3080 T</div>
+            <button class="add-button">Добавить +</button>
+        </div>
+        <div class="product">
+            <div class="discount">-34%</div>
+            <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-10/223/003/841/091/534/100040808744b0.jpg" alt="Orange">
+            <h3>Апельсины Египет кг</h3>
+            <p>990 Т/кг • 1 кг</p>
+            <div class="price">990 T</div>
+            <div class="old-price">1490 T</div>
+            <button class="add-button">Добавить +</button>
+        </div>
+    </section>
+             
+            <span>Made by Ағыбай Гибатоллаев</span>
+
+</body>
+</html>
